@@ -1,0 +1,199 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    overflow-x: hidden;
+    font-family: 'Comfortaa', cursive;
+    position: relative;
+    color: white;
+  }
+  body{
+    background: lightgray;
+    background-repeat: no-repeat;
+    z-index: 4;
+  }
+  /* variables */
+  .headings {
+    font-size: 5rem;
+  }
+  .paragraphs {
+    font-size: 2rem;
+  }
+  .quote {
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+  }
+/* nav */
+  ul {
+    list-style: none;
+  }
+  nav {
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    z-index: 5;
+    margin: 25px 0;
+  }
+  nav a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+  }
+  .logo img {
+    
+  }
+  .nav-links {
+    display: flex;
+  }
+  .hide {
+    display: none;
+}
+/* landing */
+section {
+  border: 1px solid red;
+  height: 100vh;
+}
+.landing-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/landing2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.landing-text button, .services-text button,
+ .services-text button {
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+.landing-text, .aboutus-landing, .services-text {
+  position: relative;
+  top: 400px;
+  text-align: left!important;
+  width: 60%;
+}
+.landing-text p, .aboutus-landing p, .services-text p {
+  margin: 50px 0 0 0;
+}
+.aboutus-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/landing4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* SERVICES */
+.services {
+  width: 100%;
+}
+.services-wrapper {
+  height: 100vh;
+  width: 100%;  
+  background-image: url("/images/services2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: inline-block;
+}
+
+/* PORTFOLIO */
+.portfolio-wrapper {
+  height: 100vh;
+  width: 100%;  
+  background-image: url("/images/services2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: inline-block;
+}
+
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 5px 0;
+  border-top: 1px solid white;
+}
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+      /* Header & Nav */
+  nav {
+    color: white;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition-duration: 0.5s ease-in;
+  }
+  .nav-active {
+    transform: translate(0%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    background: black;
+  }
+  .nav-links li {
+    opacity: 0;
+    position: relative;
+    list-style: none;
+    justify-content: space-around;
+  }
+  .nav-links a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  .burger div {
+    width: 25px;
+    height: 5px;
+    margin: 5px;
+    background: white;
+    transition: all 0.3s ease;
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .toggle .line1 {
+    transform: rotate(-130deg) translate(-25px, 14px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(130deg) translate(-25px, -14px);
+  }
+  }
