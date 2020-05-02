@@ -103,16 +103,59 @@ section {
   background-size: cover;
   display: inline-block;
 }
-
+.grid-container {
+  display: grid;
+}
+.grid-container-items {
+  margin: 0;
+}
 /* PORTFOLIO */
+.photos {
+  height: 100%;
+}
 .portfolio-wrapper {
-  height: 100vh;
   width: 100%;  
-  background-image: url("/images/services2.jpg");
+  background: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  display: inline-block;
+}
+.row {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  padding: 0;
+  transition: 1s ease;
+  margin: 25px;
+}
+.column img {
+  margin: 25px;
+  vertical-align: middle;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.column img:hover {
+  filter: opacity(100%);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 
