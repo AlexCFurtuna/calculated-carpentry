@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ecee5091a2.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav>
-      <ul class="nav-links">
+      <ul class="nav-links" data-aos="fade-right" data-aos-delay="100">
         <li class="hide"><a class="" href="#home" class="logo"><img src="" alt="logo"></a></li>
         <li class=""><a href="index.html">Home</a> </li>
         <li><a href="services.html">Services</a> </li>
         <li><a href="portfolio.html">Portfolio</a> </li>
         <li><a href="contact.html">Contact</a> </li>
-        <li><a href="contactform.html">Get a free quote!</a> </li>
+        
     </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -28,38 +29,28 @@
       </div>
     </nav>
 		</header>
-    
-    <section class="landing">
-      <div class="landing-wrapper">
-        <div class="landing-text">
-          <h1 class="headings">Calculated Carpentry</h1>
-          <p class="paragraphs">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-             Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-             Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-          </p>
-          <button>Get a free quote!</button>
-        </div>
-      </div>
+      <section class="landing-contact" id="contact">
+        <div class="contact-text">
+          <form data-aos="fade-right" data-aos-delay="300" action="https://formspree.io/mjvolykr" method="POST">
+               <h1 class="contact-header">Get in touch for a free quote!</h1>
+               <input type="text" name="firstname" id="fname" placeholder="Your first name ..">
+               <input type="text" name="lname" id="lname" placeholder="Your last name ..">
+               <label><input id="mail" placeholder="Your email address .." type="text" name="_replyto"></label>
+               <textarea name="subject" id="subject" placeholder="Write something .."></textarea>
+               <button class="quote"><input type="submit" value="Submit"></input></button>
+             </form>
+           <div class="socials">
+             <ul>
+               <li><img src="images/email.png"/>calculatedcarpentry@gmail.com</li>
+               <li><img src="images/phone.png"/>+44 0000 0000 0000</li>
+               <li><img src="images/location.png"/>Redhill, London</li>
+               <li><img src="images/facebook.png"/>Follow us on Facebook </li>
+               <li><img src="images/ig.png"/>Follow us on Instagram </li>
+             </ul>
+             
+           </div>
+         </div>
     </section>
-
-    <section class="about">
-      <div class="">
-        <div class="aboutus-wrapper">
-          <div class="landing-aboutus">
-            <h1 class="headings">About Us</h1>
-            <p class="paragraphs">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, 
-              lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis 
-              sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit 
-              amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt 
-              auctor. Nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis 
-              bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
     <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

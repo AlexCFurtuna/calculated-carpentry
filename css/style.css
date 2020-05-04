@@ -42,9 +42,15 @@
     margin: 25px 0;
   }
   nav a {
+    padding: 15px;
     font-size: 1.2rem;
     text-decoration: none;
     color: white;
+  }
+  nav a:hover {
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
   }
   .logo img {
     
@@ -58,9 +64,37 @@
 /* landing */
 section {
   border: 1px solid red;
-  height: 100vh;
+  min-height: 100vh;
 }
-.landing-wrapper {
+.home-landing-wrapper, .services-landing-wrapper,
+ .portfolio-landing-wrapper, .landing .contact, .services-items-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.home-landing-wrapper {
+  background-image: url("/images/landing2.jpg");
+  background-size: cover;
+
+}
+.landing-text button, .services-text button,
+ .services-text button {
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+.landing-text, .aboutus-landing, .services-text{
+  position: relative;
+  top: 400px;
+  text-align: left!important;
+  width: 60%;
+}
+.landing-text p, .aboutus-landing p, .services-text p,
+.contact-text p {
+  margin: 50px 0 0 0;
+}
+.aboutus-wrapper {
   width: 100%;
   height: 100vh;
   background-image: url("/images/landing2.jpg");
@@ -68,31 +102,19 @@ section {
   background-attachment: fixed;
   background-size: cover;
 }
-.landing-text button, .services-text button,
- .services-text button {
-  margin-top: 50px;
-  font-size: 1.5rem;
-}
-.landing-text, .aboutus-landing, .services-text {
-  position: relative;
-  top: 400px;
-  text-align: left!important;
-  width: 60%;
-}
-.landing-text p, .aboutus-landing p, .services-text p {
-  margin: 50px 0 0 0;
-}
-.aboutus-wrapper {
-  width: 100%;
-  height: 100vh;
-  background-image: url("/images/landing4.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+button a {
+  color: white;
+  text-decoration: none;
 }
 /* SERVICES */
 .services {
   width: 100%;
+}
+.services-landing-wrapper {
+  background-image: url("/images/services-current.jpg");
+}
+.services-items-wrapper {
+  background-image: url("/images/services-current.jpg");
 }
 .services-wrapper {
   height: 100vh;
@@ -113,6 +135,9 @@ section {
 .photos {
   height: 100%;
 }
+.portfolio-landing-wrapper {
+  background-image: url("/images/portfolio-current.jpg");
+}
 .portfolio-wrapper {
   width: 100%;  
   background: white;
@@ -126,8 +151,6 @@ section {
   flex-wrap: wrap;
   padding: 0 4px;
 }
-
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   padding: 0;
@@ -138,10 +161,127 @@ section {
   margin: 25px;
   vertical-align: middle;
   width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 5px solid white;
 }
 .column img:hover {
-  filter: opacity(100%);
+  width: 150%;
+  margin: 0 auto;
+  transition: .3s ease;
+  position: relative;
+}
+/* CONTACT */
+#contact {
+  height: 100vh;
+  display: inline-block;
+  width: 100%;
+  background-image: url("/images/livingroom1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.contact-text {
+  margin-top: 250px;
+}
+.contact-container {
+  margin: 0;
+  position: relative;
+  top: 250px;
+}
+.contact-header {
+  position: relative;
+  top: -50px;
+  font-size: 3rem;
+}
+form {
+  width: 30%;
+  margin: 0 0 0 150px;
+  }
+  #fname, #lname, #mail, #subject {
+  border: 1px solid white;
+  border-bottom: 1px solid white;
+  color: white;
+  box-shadow: none;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 100!important;
+ }
+ select, textarea {
+  border-radius: 10px;
+  box-shadow: none;
+ }
+ textarea {
+   min-height: 20vh;
+ }
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+ color: white;
+ opacity: 1; /* Firefox */
+ }
+ 
+ :-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white;
+ }
+ ::-ms-input-placeholder { /* Microsoft Edge */
+ color: white;
+ }
+ input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 55px;
+  resize: vertical;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+    font-family: 'Comfortaa', cursive!important;
+ }
+ input[type=submit] {
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-family: 'Comfortaa', cursive!important;
+  font-size: 1rem;
+ }
+ .contact-text button {
+   font-size: 1.5rem;
+   margin: 0;
+ }
+ .container-contact {
+  margin-top: 150px;
+ }
+ .contact ul {
+  list-style: none;
+  text-align: center;
+ }
+ .socials {
+  position: relative;
+  float: right;
+  top: -690px;
+  margin: 0 350px;
+ }
+ .socials img {
+   position: relative;
+   top: 25px;
+   right: 25px;
+ }
+ .socials li {
+   margin: 40px;
+   font-size: 1.5rem;
+   position: relative;
+ }
+/* FOOTER */
+ footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 5px 0;
+  border-top: 1px solid white;
 }
 @media screen and (max-width: 800px) {
   .column {
@@ -156,18 +296,6 @@ section {
     flex: 100%;
     max-width: 100%;
   }
-}
-
-
-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  color: white;
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 5px 0;
-  border-top: 1px solid white;
 }
   @media screen and (min-width: 360px) and (max-width: 767px) {
       /* Header & Nav */
