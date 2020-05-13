@@ -58,7 +58,7 @@ nav a:hover {
   margin: 0 0 0 -900px;
 }
 .logo {
-  height: 150px!important;
+  height: 100px;
 }
 .nav-links {
   display: flex;
