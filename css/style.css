@@ -14,7 +14,6 @@ body {
 /* Mobile */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  section {}
   /* Header & Nav */
   .hide {
     display: none;
@@ -122,9 +121,9 @@ body {
     text-decoration: none;
     font-size: 1rem;
   }
-  /* index */
+  /* INDEX */
   .landing .about-us {
-    margin-top: -1px;
+    margin-top: -55px!important;
   }
   .landing, .services, .portfolio, .contact {
     background-image: url("/images/landing.jpg");
@@ -262,6 +261,16 @@ body {
     background: rgb(128, 128, 128);
     color: white;
   }
+}
+
+/* large phones */
+@media screen and (width: 375px), (width: 411px) and (height: 731px), (height: 736px), (height: 812px), (height: 823px) {
+  .logo-responsive img {
+    height: 150px;
+  }
+ .landing-text, .landing-text-us {
+   top: 200px;
+ }
 }
 
 /* mobile landscape */
