@@ -1,37 +1,36 @@
 //smooth scroll
-$(document).ready(function() {
-    $("a[href*='#']:not([href='#])").click(function() {
-      let target = $(this).attr("href");
-      $('html,body').stop().animate({
-        scrollTop: $(target).offset().top
-      }, 1000);
-      event.preventDefault();
-    });
+$(document).ready(function () {
+  $("a[href*='#']:not([href='#])").click(function () {
+    let target = $(this).attr("href");
+    $('html,body').stop().animate({
+      scrollTop: $(target).offset().top
+    }, 1000);
+    event.preventDefault();
   });
+});
 
-  // nav //
+// nav //
 const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
   //toggle nab
-    burger.addEventListener('click', () => {
-      nav.classList.toggle('nav-active');
-      //animate link
-       navLinks.forEach((link, index) => {
-         if (link.style.animation) {
-           link.style.animation = '';
-         } else {
-           link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.5}s`;
-         }
-       });
-       //burger animation
-       burger.classList.toggle('toggle');
-     });
-   }
-  navSlide();
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+    //animate link
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.5}s`;
+      }
+    });
+    //burger animation
+    burger.classList.toggle('toggle');
+  });
+}
+navSlide();
 
 
 
-  
-  
+
