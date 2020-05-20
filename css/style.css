@@ -247,9 +247,11 @@ body {
   }
   .socials {
     margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .socials li {
-    margin: 25px auto;
+  .socials div {
+    margin: 25px 0;
   }
   /* footer */
   footer {
@@ -387,6 +389,7 @@ body {
   /* INDEX */
   .landing .about-us {
     margin-top: -55px;
+    padding-bottom: 350px;
   }
   .landing, .services, .portfolio, .contact {
     background-image: url("/images/landing.jpg");
@@ -407,7 +410,7 @@ body {
   /* SERVICES */
   .services {
     background-image: url("/images/services.jpg");
-    padding-bottom: 150px;
+    padding-bottom: 250px;
   }
   .services-wrapper-list {
     margin-top: -50px;
@@ -416,6 +419,9 @@ body {
     margin-top: 50px;
   }
   /* PORTFOLIO */
+  .portfolio {
+    padding-bottom: 150px;
+  }
   .row {
     width: 80%;
     display: flex;
@@ -786,6 +792,8 @@ body {
   }
 }
 
+/* Tablets */
+
 @media (min-width: 1024px) and (max-height: 1366px) {
   /* Header & Nav */
   .hide {
@@ -998,7 +1006,7 @@ body {
     opacity: 1;
     font-size: 1.2rem;
   }
-  :-ms-input-placeholder,  ::-ms-input-placeholder {
+  :-ms-input-placeholder, ::-ms-input-placeholder {
     color: white;
   }
   /* */
@@ -1039,5 +1047,254 @@ body {
     background: rgb(128, 128, 128);
     color: white;
     font-size: 1.5rem;
+  }
+}
+
+/* Small laptops */
+
+@media (min-width: 1280px) and (min-height: 800px) {
+  /* Header & Nav */
+  .logo-responsive {
+    display: none;
+  }
+  .hide {
+    display: flex;
+    width: 50%;
+    margin: 0;
+  }
+  .nav-left {
+    margin: -55px 0 0 25px;
+    width: 50%;
+  }
+  .nav-right {
+    width: 50%;
+    position: relative;
+    top: -15px;
+  }
+  .logo {
+    height: 100px;
+  }
+  nav {
+    top: 0;
+    right: 0;
+    width: 100%;
+    color: white;
+    position: fixed;
+    color: white;
+    z-index: 5;
+    margin: 50px 0;
+    display: flex;
+  }
+  .nav-links {
+    position: relative;
+    flex-direction: row;
+  }
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+  nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border-bottom: solid 0 white;
+    transition: border-width 0.2s linear;
+  }
+  .nav-links li {
+    opacity: 1;
+  }
+  .burger {
+    display: none;
+  }
+  .burger div {
+    display: none;
+  }
+  /* variables */
+  .paragraphs {
+    font-size: 1.8rem;
+    position: relative;
+    top: 15px;
+  }
+  .headings {
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: left;
+  }
+  .hidden-header {
+    display: grid;
+  }
+  .quote {
+    border: 3px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    background: transparent;
+    margin-top: 50px;
+  }
+  button a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  /* INDEX */
+  section {
+    min-height: 100vh;
+  }
+  .logo-responsive img {
+    height: 450px
+  }
+  .landing .about-us {
+    margin-top: -55px;
+  }
+  .landing, .services, .portfolio, .contact {
+    background-image: url("/images/landing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .landing-text, .landing-text-us, .services-text, .services-text-us, .portfolio-text {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+    text-align: left;
+  }
+  .landing-wrapper, .services-wrapper, .portfolio-wrapper {
+    position: relative;
+    top: 150px;
+    width: 80%;
+  }
+  .us {
+    margin-top: 0;
+  }
+  /* SERVICES */
+  .services {
+    background-image: url("/images/services.jpg");
+    padding-bottom: 350px;
+  }
+  .services-wrapper-list {
+    margin-top: -50px;
+    
+  }
+  .services-wrapper-list div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .grid-container-items {
+    margin: 50px auto;    
+  }
+  .grid-container-items h1 {
+    font-size: 2rem;
+  }
+  .grid-container-items p {
+    width: 70%;
+    margin: 15px auto;
+    font-size: 1rem;
+  }
+  /* PORTFOLIO */
+  .row {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin: 0 auto;
+  }
+  .column {
+    flex: 100%;
+    padding: 0;
+    transition: 1s ease;
+    margin: 0 auto;
+  }
+  .column img {
+    margin: 25px;
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 5px solid white;
+  }
+  .portfolio-text {
+    padding-bottom: 200px;
+  }
+  /* CONTACT */
+  .contact {
+    background-image: url("/images/livingroom1.jpg");
+    padding-bottom: 50px;
+  }
+  .contact-header {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  form {
+    width: 80%;
+    margin: 50px auto;
+  }
+  form button {
+    margin: 0!important;
+  }
+  #fname, #lname, #mail, #subject {
+    border: 1px solid white;
+    border-bottom: 1px solid white;
+    color: white;
+    box-shadow: none;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 100!important;
+    font-family: 'Questrial', sans-serif!important;
+  }
+  select, textarea {
+    border-radius: 10px;
+    box-shadow: none;
+  }
+  textarea {
+    min-height: 20vh;
+  }
+  /* cross browser */
+  ::placeholder {
+    color: white;
+    opacity: 1;
+    font-size: 1.2rem;
+  }
+  :-ms-input-placeholder, ::-ms-input-placeholder {
+    color: white;
+  }
+  /* */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid white!important;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 55px;
+    resize: vertical;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+    font-family: 'Questrial', sans-serif;
+  }
+  input[type=submit] {
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    font-family: 'Questrial', sans-serif;
+  }
+  .socials {
+    margin-top: 75px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.5rem;
+  }
+  /* footer */
+  footer {
+    position: relative;
+    width: 100%;
+    min-height: 25px;
+    bottom: 0;
+    padding: 7px 0;
+    background: rgb(128, 128, 128);
+    color: white;
+    font-size: 1rem;
   }
 }
