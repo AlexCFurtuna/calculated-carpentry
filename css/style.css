@@ -1161,7 +1161,7 @@ body {
   .landing-wrapper, .services-wrapper, .portfolio-wrapper {
     position: relative;
     top: 150px;
-    width: 80%;
+    width: 80ß%;
   }
   .us {
     margin-top: 0;
@@ -1173,22 +1173,24 @@ body {
   }
   .services-wrapper-list {
     margin-top: -50px;
-    
   }
   .services-wrapper-list div {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(1);
   }
   .grid-container-items {
-    margin: 50px auto;    
+    margin: 0;
   }
   .grid-container-items h1 {
     font-size: 2rem;
   }
   .grid-container-items p {
-    width: 70%;
-    margin: 15px auto;
-    font-size: 1rem;
+    margin: 50px 0;
+    font-size: 1.5rem;
+  }
+  .services-wrapper-list button {
+    position: relative;
+    top: 225px;
   }
   /* PORTFOLIO */
   .row {
