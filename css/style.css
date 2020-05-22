@@ -1104,7 +1104,7 @@ footer {
     z-index: 5!important;
     margin: 0;
     display: flex;
-    transition: 2s ease;
+    transition: 1s ease;
   }
   .nav-links {
     position: relative;
