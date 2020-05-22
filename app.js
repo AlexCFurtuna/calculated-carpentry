@@ -35,6 +35,18 @@ $(window).scroll(function () {
   $(".landing-text, .services-text, .portfolio-text").css("opacity", 1.5 - $(window).scrollTop() / 250);
 });
 
+$(function() {
+  var $nav = $('nav'),
+    $window = $(window),
+    bgArray = ["black"],
+    navHeight = 50,
+    sectionHeight = 150;
+
+  $window.scroll(function() {
+    $nav.css('background', bgArray[Math.floor(($nav.offset().top + navHeight)
+        / sectionHeight)]);
+  });
+});
 
 
 
