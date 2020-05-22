@@ -1060,11 +1060,10 @@ body {
   .hide {
     display: flex;
     width: 50%;
-    margin: -10px 0 0 70px;
+    margin: 0 0 0 50px;
     padding: 0;
   }
   .nav-left {
-    /*margin: -55px 0 0 25px;*/
     width: 50%;
   }
   .nav-right {
@@ -1094,7 +1093,7 @@ body {
     font-size: 1.2rem;
   }
   nav a {
-    padding: 10px 15px;
+    padding: 10px 0;
     text-decoration: none;
     color: white;
     border-bottom: solid 0 white;
@@ -1151,8 +1150,8 @@ body {
     background-position: center;
   }
   .landing-text, .landing-text-us, .services-text, .services-text-us, .portfolio-text {
-    width: 90%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 0 0 0 70px;
     position: relative;
     top: 200px;
     text-align: left;

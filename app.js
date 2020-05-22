@@ -33,6 +33,8 @@ navSlide();
 
 $(window).scroll(function () {
   $(".landing-text, .services-text, .portfolio-text").css("opacity", 1.5 - $(window).scrollTop() / 250);
+  $(".renovations").css("opacity", 1.5 - $(window).scrollTop() / 450);
+  $(".extensions").css("opacity", 1.5 - $(window).scrollTop() / 850);
 });
 
 
