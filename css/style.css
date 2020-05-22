@@ -1213,7 +1213,7 @@ footer {
   /* PORTFOLIO */
   .portfolio {
     padding-bottom: 100px;
-    
+
   }
   .portfolio-wrapper {
     margin: 0 auto;
@@ -1229,7 +1229,7 @@ footer {
     flex-wrap: wrap;
     padding-bottom: 0;
     position: relative;
-    margin: -100px 0 0 0;
+    margin: -50px 0 0 0;
   }
   .column {
     flex: 25%;
