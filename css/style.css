@@ -1217,7 +1217,6 @@ footer {
   .portfolio-wrapper {
     margin: 0 auto;
     top: 0;
-    padding-bottom: 0;
   }
   .portfolio-text {
     padding: 0;
@@ -1229,7 +1228,7 @@ footer {
     flex-wrap: wrap;
     padding-bottom: 0;
     position: relative;
-    top: -200px;
+    margin-top: -200px;
   }
   .column {
     flex: 25%;
