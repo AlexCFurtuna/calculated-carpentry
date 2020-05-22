@@ -1229,9 +1229,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 0;
+    position: relative;
+    top: -300px;
   }
   .column {
-    flex: 30%;
+    flex: 25%;
     padding: 0;
     transition: 1s ease;
     margin: 25px;
@@ -1241,13 +1243,7 @@ footer {
     vertical-align: middle;
     width: 100%;
     box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 5px solid white;
-  }
-  .column img:hover {
-    width: 130%;
-    margin: 0;
-    transition: 1s ease;
-    position: relative;
+    border: 3px solid white;
   }
   /* CONTACT */
   .contact {
@@ -1375,7 +1371,6 @@ footer {
     padding-bottom: 0;
   }
   .column {
-    flex: 35%;
     padding: 0;
     transition: 1s ease;
     margin: 25px;
@@ -1385,12 +1380,5 @@ footer {
     vertical-align: middle;
     width: 100%;
     box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 5px solid white;
-  }
-  .column img:hover {
-    width: 130%;
-    margin: 0;
-    transition: 1s ease;
-    position: relative;
   }
 }
