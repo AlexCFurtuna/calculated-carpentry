@@ -1228,7 +1228,7 @@ footer {
     flex-wrap: wrap;
     padding-bottom: 0;
     position: relative;
-    margin-top: -200px;
+    margin: -200px 0 0 0;
   }
   .column {
     flex: 25%;
