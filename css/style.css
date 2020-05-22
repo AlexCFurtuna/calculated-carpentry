@@ -1072,7 +1072,7 @@ footer {
 
 /* Small laptops */
 
-@media (min-width: 1280px) and (min-height: 800px) {
+@media (min-width: 1280px) and (min-height: 700px) {
   /* Header & Nav */
   .logo-responsive {
     display: none;
@@ -1217,7 +1217,7 @@ footer {
     padding: 0;
   }
   .portfolio-wrapper {
-    margin: 0;
+    margin: 0 auto;
     top: 0;
   }
   .portfolio-text {
@@ -1225,7 +1225,7 @@ footer {
     top: 350px;
   }
   .row {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 0;
